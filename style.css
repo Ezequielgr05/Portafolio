@@ -1,0 +1,264 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Mono:wght@100;200;300;400;500;600;700 & display=swap');
+
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./images/fondo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.box{
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.74);
+    backdrop-filter: blur(5px);
+    border: 1px solid aliceblue;
+    box-shadow: 0px 0px 35px 5px rgba(0,0,0,0.75);
+}
+
+.textbody {
+    text-align: justify;
+    width: max-content;
+    height: max-content;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Encabezado */
+
+.navbar-port{
+    background-color: rgba(0, 0, 0, 0.74);
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid aliceblue;
+    height: 50px;
+}
+
+/* sobre mi */
+#sobremi{
+    text-align: left;
+    padding: 2%;
+}
+
+#sobremi h2{
+    margin-bottom: 3%;
+}
+
+#sobremi p{
+    margin-bottom: 2%;
+}
+
+/* portafolio */
+#portafolio{
+    text-align: left;
+    padding: 2%;
+}
+
+    /* Cartas */
+    .card__image-wrapper img {
+        display: block;
+        max-width: 100%;
+    }
+
+    .card {
+        float: left;
+        width: 22rem;
+        height: 15.5rem;
+        color: #ffffff;
+        perspective: 800px;
+        margin-top: 2%;
+        margin-left: 1%;
+    }
+    .card__inner {
+        position: relative;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+    .card:hover .card__inner {
+        transform: rotateY(-180deg);
+    }
+    .card__side {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(16, 22, 20, 0.74);
+        backdrop-filter: blur(5px);
+        display: grid;
+        grid-template-rows: 180px 1fr;
+        backface-visibility: hidden;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    .card__side--back {
+        transform: rotateY(180deg);
+    }
+    .card__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card__body {
+        padding: 16px;
+        font-size: 12px;
+    }
+    .card__body--flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card__title {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+    .card__arrow {
+        display: grid;
+        place-items: center;
+        width: 30px;
+        height: 30px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+    }
+
+    .card__button{
+        position: relative;
+        text-decoration: none;
+        color: #018d81;
+        top: 10%;
+        left: 30%;
+    }
+
+/* Contacto */
+
+input, label{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1%;
+}
+
+input{
+    padding: 0.5%;
+    width: 14.75rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgba(16, 22, 20, 0.74);
+    backdrop-filter: blur(5px);
+    color: aliceblue;
+}
+
+input:focus{
+    background-color: rgb(6, 8, 8);
+    backdrop-filter: none;
+}
+
+textarea{
+    border-radius: 5px;
+    background-color: rgba(16, 22, 20, 0.74);
+    backdrop-filter: blur(5px);
+    color: aliceblue;
+    padding: 0.5%;
+}
+
+textarea:focus{
+    background-color: rgb(6, 8, 8);
+    backdrop-filter: none;
+}
+
+input[type="submit"]{
+    margin-top: 0.5%;
+    width: 5rem;
+}
+
+input[type="submit"]:active{
+    background-color: rgb(6, 8, 8);
+}
+
+input[type="text"]:valid{
+    background-color: rgba(0, 102, 68, 0.74);
+    backdrop-filter: blur(5px);
+}
+
+input[type="email"]:valid{
+    background-color: rgba(0, 102, 68, 0.74);
+    backdrop-filter: blur(5px);
+}
+
+input[type="tel"]:valid{
+    background-color: rgba(0, 102, 68, 0.74);
+    backdrop-filter: blur(5px);
+}
+
+/* pie de página */
+footer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.884);
+    padding: 1.25rem;
+    border-top: 1px solid aliceblue;
+}
+
+.footer-nav-item{
+    color: aliceblue;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer-social-item{
+    color: aliceblue;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer_left_nav h2{
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer_right_social h2{
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+.footer_bottom{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+/* Barra deslizante */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #424242;
+    border-radius: 1px;
+    
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #1b1b1b;
+}
