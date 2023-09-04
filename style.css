@@ -45,6 +45,15 @@ a{
     height: 50px;
 }
 
+.navbar-colapse {
+    background-color: rgba(0, 0, 0, 0.911);
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid aliceblue;
+    padding: 10px;
+    color: aliceblue;
+    width: 100%;
+}
+
 /* sobre mi */
 #sobremi{
     text-align: left;
